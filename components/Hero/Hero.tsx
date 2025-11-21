@@ -22,7 +22,7 @@ export default function Hero() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper h-[600px] bg-black "
+        className="mySwiper h-[400px] md:h-[600px] bg-black rounded-3xl"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
