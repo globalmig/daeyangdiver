@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Phone from "@/components/Phone";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,9 +29,14 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f0f0f0]`}>
-        <Header />
-        {children}
-        <Footer />
+        <div className="min-h-screen flex flex-col">
+          <Header />
+
+          {/* 콘텐츠 영역이 남은 공간을 차지 */}
+          <main className="flex-1">{children}</main>
+          <Phone />
+          <Footer />
+        </div>
       </body>
     </html>
   );

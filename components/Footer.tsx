@@ -15,10 +15,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">연락처</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>전화: 02-XXXX-XXXX</li>
-              <li>팩스: 02-XXXX-XXXX</li>
+              <li>전화: 010-4117-7991</li>
+              <li>팩스: 064-763-7993</li>
               <li>이메일: info@daeyoungdive.com</li>
-              <li>주소: 서울특별시 XX구 XX로 XX</li>
+              <li>
+                주소: 서귀포시 중정로 34,502호
+                <br /> (서귀동, 천지연리슈빌)
+              </li>
             </ul>
           </div>
 

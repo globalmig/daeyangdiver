@@ -1,7 +1,9 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -9,9 +11,10 @@ import "swiper/css/navigation";
 import "swiper/css/grid";
 
 import "./Slider.module.css";
+import Image from "next/image";
 
 // import required modules
-import { Grid, Pagination } from "swiper/modules";
+import { Grid, Pagination, Autoplay } from "swiper/modules";
 
 export default function App() {
   return (
@@ -24,6 +27,11 @@ export default function App() {
         spaceBetween={30}
         pagination={{
           clickable: true,
+        }}
+        autoplay={{
+          delay: 2000, // 3초마다 자동 이동
+          disableOnInteraction: false, // 유저가 슬라이드 건드려도 autoplay 계속
+          pauseOnMouseEnter: true, // 마우스 올리면 멈춤 (원하면 지워도 됨)
         }}
         breakpoints={{
           0: {
@@ -47,18 +55,33 @@ export default function App() {
             spaceBetween: 20,
           },
         }}
-        modules={[Grid, Pagination]}
-        className="mySwiper h-96"
+        modules={[Grid, Pagination, Autoplay]}
+        className="mySwiper h-[800px]"
       >
-        <SwiperSlide className="bg-black">Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/구조물설치.png" alt="구조물설치" fill className="object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/work1.jpg" alt="구조물설치" fill className="object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/work2.jpg" alt="구조물설치" fill className="object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/work3.jpg" alt="구조물설치" fill className="object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/work4.jpg" alt="구조물설치" fill className="object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/work5.jpg" alt="구조물설치" fill className="object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/work6.jpg" alt="구조물설치" fill className="object-cover" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/수중용접.jpg" alt="수중용접" fill className="object-cover" />
+        </SwiperSlide>
       </Swiper>
     </>
   );

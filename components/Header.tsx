@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 export default function Header() {
@@ -26,21 +27,28 @@ export default function Header() {
     }
   }, [isMenuOpen]);
 
-  const menuItems = ["회사소개", "사업분야", "사업실적"];
+  const menuItems = [
+    { title: "HOME", link: "/" },
+    { title: "회사소개", link: "/company" },
+    { title: "사업분야", link: "/business" },
+    { title: "사업실적", link: "/gallery" },
+  ];
 
   return (
     <>
       <header className="z-50 w-full fixed top-0 py-5 px-4 bg-black/30 backdrop-blur-sm">
         <div className="flex justify-between items-center max-w-[1440px] w-full mx-auto">
-          <h1 className="m-0 text-white text-xl md:text-2xl font-bold cursor-pointer">대영잠수개발</h1>
+          <Link href={"/"}>
+            <h1 className="m-0 text-white text-xl md:text-2xl font-bold cursor-pointer">대영잠수개발</h1>
+          </Link>
 
           {/* 데스크톱 메뉴 */}
           <nav className="hidden md:block">
             <ul className="flex gap-10 text-white text-xl font-bold">
               {menuItems.map((item) => (
-                <li key={item} className="cursor-pointer hover:text-blue-400 transition-colors">
-                  {item}
-                </li>
+                <Link key={item.title} href={item.link}>
+                  <li className="cursor-pointer hover:text-blue-400 transition-colors">{item.title}</li>
+                </Link>
               ))}
             </ul>
           </nav>
@@ -64,9 +72,9 @@ export default function Header() {
       <nav className={`md:hidden fixed top-0 right-0 h-full w-64 bg-gray-900 z-40 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <ul className="flex flex-col gap-6 pt-24 px-8">
           {menuItems.map((item) => (
-            <li key={item} className="text-white text-xl font-bold cursor-pointer hover:text-blue-400 transition-colors py-3 border-b border-gray-700" onClick={() => setIsMenuOpen(false)}>
-              {item}
-            </li>
+            <Link key={item.title} href={item.link} onClick={() => setIsMenuOpen(false)}>
+              <li className="text-white text-xl font-bold cursor-pointer hover:text-blue-400 transition-colors py-3 border-b border-gray-700">{item.title}</li>
+            </Link>
           ))}
         </ul>
       </nav>
