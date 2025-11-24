@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
@@ -50,7 +50,8 @@ const businessList = [
   },
 ];
 
-export default function Page() {
+// useSearchParams를 사용하는 컴포넌트 분리
+function BusinessContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -58,7 +59,6 @@ export default function Page() {
   const defaultId = businessList[0].id;
   const [activeId, setActiveId] = useState<string>(defaultId);
 
-  // URL 의 ?tab= 값 → 상태 반영
   useEffect(() => {
     const tabFromUrl = searchParams.get("tab");
     if (tabFromUrl && businessList.some((b) => b.id === tabFromUrl)) {
@@ -76,7 +76,6 @@ export default function Page() {
     const params = new URLSearchParams(searchParams.toString());
     params.set("tab", id);
 
-    // 경로 + 쿼리스트링 업데이트 (스크롤 유지)
     router.replace(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
@@ -168,5 +167,14 @@ export default function Page() {
         </div>
       </section>
     </div>
+  );
+}
+
+// 메인 페이지 컴포넌트에서 Suspense로 감싸기
+export default function Page() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+      <BusinessContent />
+    </Suspense>
   );
 }
