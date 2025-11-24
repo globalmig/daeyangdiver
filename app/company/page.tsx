@@ -7,7 +7,7 @@ export default function page() {
       {/* 1. sticky hero 영역 */}
       <div className="sticky top-0 w-full">
         <div className="relative w-full h-72 md:h-96 flex items-center justify-center">
-          <Image src="/image/company2.jpg" alt="회사 소개 이미지" fill className="absolute object-cover object-top" />
+          <Image src="/image/company2.jpg" alt="회사소개이미지" fill className="absolute object-cover object-top" />
           <div className="flex flex-col justify-center items-center mt-10 relative">
             <p className="text-3xl md:text-4xl font-bold text-white">회사소개</p>
             <p className="text-xl md:text-2xl text-white/60 font-thin mt-2">company</p>

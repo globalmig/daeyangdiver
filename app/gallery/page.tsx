@@ -2,6 +2,19 @@ import React from "react";
 import Image from "next/image";
 
 export default function page() {
+  const images: string[] = [
+    "/image/구조물설치.png",
+    "/image/camera.jpg",
+    "/image/work1.jpg",
+    "/image/work2.jpg",
+    "/image/work3.jpg",
+    "/image/work4.jpg",
+    "/image/work5.jpg",
+    "/image/work6.jpg",
+    "/image/수중용접.jpg",
+    "/image/hasu.jpg",
+  ];
+
   return (
     <div className="relative flex flex-col items-center">
       {/* 1. sticky hero 영역 */}
@@ -17,25 +30,8 @@ export default function page() {
 
       {/* 2. 아래 스크롤 영역 */}
       <section className="w-full bg-white rounded-2xl p-6 shadow-md z-10 py-16 flex flex-col items-center">
-        {/* <ul className="flex gap-4 mb-6 font-semibold">
-          <li>인사말</li>
-          <li>오시는 길</li>
-        </ul> */}
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center md:items-start">
-          {[
-            "/image/구조물설치.png",
-            "/image/camera.jpg",
-            "/image/work1.jpg",
-            "/image/work2.jpg",
-            "/image/work3.jpg",
-            "/image/work4.jpg",
-            "/image/work5.jpg",
-            "/image/work6.jpg",
-            "/image/수중용접.jpg",
-            ,
-            "/image/hasu.jpg",
-          ].map((src, i) => (
+          {images.map((src, i) => (
             <div key={i} className="w-full h-[300px] md:h-[350px] rounded-md overflow-hidden">
               <Image src={src} alt="회사 소개 이미지" width={600} height={400} className="w-full h-full object-cover" />
             </div>
