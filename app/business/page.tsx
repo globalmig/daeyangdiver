@@ -51,7 +51,7 @@ const businessList = [
   {
     id: "ship-underwater-work",
     label: "선박 수중작업",
-    title: "선박 수중작업 - 특허 보유",
+    title: "선박 수중작업",
     image: "/image/선박수중작업.png",
     alt: "선박 수중작업 이미지",
     description:

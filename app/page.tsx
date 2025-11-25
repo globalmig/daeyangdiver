@@ -34,7 +34,7 @@ export default function HeroVideo() {
 
           {/* 태그 영역 */}
           <div className="mt-5 flex flex-wrap justify-center w-full gap-2 md:gap-4">
-            {["수중공사", "수중촬영", "수중용접·절단", "선박인양", "수중구조물설치", "선박수중작업(특허)", "소나사우더수중곡직(특허)"].map((tag) => (
+            {["수중공사", "수중촬영", "수중용접·절단", "선박인양", "수중구조물설치", "선박수중작업", "소나사우더수중곡직(특허)"].map((tag) => (
               <div key={tag} className="border px-5 py-2 rounded-full text-sm backdrop-blur-sm bg-white/10">
                 #{tag}
               </div>
@@ -152,7 +152,7 @@ export default function HeroVideo() {
           <div className="card-item border bg-black/10 rounded-xl overflow-hidden relative h-96 md:h-[440px] group">
             <Image src="/image/선박수중작업.png" alt="선박수중작업을 하는 작업자" fill className="object-cover" />
             <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4 text-center">
-              <h4 className="text-white">선박 수중 작업 (특허)</h4>
+              <h4 className="text-white">선박 수중 작업</h4>
             </div>
           </div>
           <div className="card-item border bg-black/10 rounded-xl overflow-hidden relative h-96 md:h-[440px] group">
