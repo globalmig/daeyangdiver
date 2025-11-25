@@ -19,7 +19,7 @@ export default function Footer() {
               <li>전화: 010-4117-7991</li>
               <li>일반: 064-763-7992</li>
               <li>팩스: 064-763-7993</li>
-              <li>이메일: info@daeyoungdive.com</li>
+              <li>이메일: aa01041177991@gmail.com</li>
               <li>
                 본사 주소: 부산광역시 동구 수정공원로 151-2
                 <br />
