@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function page() {
   const images: string[] = [
-    "/image/구조물설치.png",
     "/image/camera.jpg",
     "/image/work1.jpg",
     "/image/work2.jpg",
     "/image/work3.jpg",
     "/image/work4.jpg",
+    "/image/구조물설치.png",
     "/image/work5.jpg",
     "/image/work6.jpg",
     "/image/수중용접.jpg",

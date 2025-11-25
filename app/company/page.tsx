@@ -55,7 +55,7 @@ export default function page() {
           {/* 텍스트 */}
           <div className="w-full lg:w-1/2">
             <span className="text-[#079aca] font-semibold tracking-wider text-sm uppercase">CEO PROFILE</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3">대표이사 약력</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3">대표 잠수사 진인남</h2>
 
             <div className="mt-8 p-6 rounded-xl bg-gray-50 border border-gray-100 text-gray-700 leading-relaxed shadow-sm ">
               <p className="mb-2">• 1991년 대양잠수개발 창립 </p>
@@ -80,16 +80,23 @@ export default function page() {
           {/* 지도와 정보 그리드 */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* 지도 */}
-            <div className="lg:col-span-2">
-              <div className="relative w-full h-[400px] md:h-[550px] rounded-2xl overflow-hidden shadow-xl">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.803595661817!2d129.0453001!3d35.1365745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ebbeac35f147%3A0x3a14e0b8eab5c66!2z67aA7IKw6rSR7Jet7IucIOuPmeq1rCDsiJjsoJXqs7Xsm5DroZwgMTUxLTI!5e0!3m2!1sko!2skr!4v1763698797817!5m2!1sko!2skr"
-                  loading="lazy"
-                  allowFullScreen
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="absolute inset-0 w-full h-full border-0"
-                />
-              </div>
+            <div className="relative w-full h-[400px] md:h-[550px] rounded-2xl overflow-hidden shadow-xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.803595661817!2d129.0453001!3d35.1365745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ebbeac35f147%3A0x3a14e0b8eab5c66!2z67aA7IKw6rSR7Jet7IucIOuPmeq1rCDsiJjsoJXqs7Xsm5DroZwgMTUxLTI!5e0!3m2!1sko!2skr!4v1763698797817!5m2!1sko!2skr"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 w-full h-full border-0"
+              />
+            </div>
+            <div className="relative w-full h-[400px] md:h-[550px] rounded-2xl overflow-hidden shadow-xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.7298908547373!2d126.55748681188493!3d33.247379073360015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c5399259aa3e7%3A0xc47f1b1730198f34!2z7KCc7KO87Yq567OE7J6Q7LmY64-EIOyEnOq3gO2PrOyLnCDspJHsoJXroZwgMzQ!5e0!3m2!1sko!2skr!4v1764056725729!5m2!1sko!2skr"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 w-full h-full border-0"
+              />
             </div>
 
             {/* 상세 정보 */}

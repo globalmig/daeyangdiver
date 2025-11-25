@@ -9,6 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">대양 잠수 개발(주)</h3>
             <p className="text-gray-400 text-sm leading-relaxed">전문 잠수 및 수중 작업 전문 기업</p>
+            <p className="text-gray-400 text-sm leading-relaxed">대표: 진인남</p>
           </div>
 
           {/* 연락처 */}
@@ -40,8 +41,8 @@ export default function Footer() {
               <li>구조물 설치</li>
               <li>침몰 선박 인양</li>
               <li>하수처리장 보수·정비</li>
-              <li>추가1</li>
-              <li>추가2</li>
+              <li>선박 수중 작업</li>
+              <li>소나 사우더 수중 곡직</li>
             </ul>
           </div>
         </div>
