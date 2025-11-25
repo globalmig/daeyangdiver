@@ -23,7 +23,7 @@ export default function page() {
           <Image src="/image/hero_gallery.jpg" alt="회사 소개 이미지" fill className="absolute object-cover object-top" />
           <div className="flex flex-col justify-center items-center mt-10 relative">
             <p className="text-3xl md:text-4xl font-bold text-white">사업실적</p>
-            <p className="text-xl md:text-2xl text-white/60 font-thin mt-2">gallery</p>
+            <p className="text-xl md:text-2xl text-white/70 font-light mt-2 tracking-[0.2em] uppercase">gallery</p>
           </div>
         </div>
       </div>

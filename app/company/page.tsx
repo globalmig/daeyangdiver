@@ -10,7 +10,7 @@ export default function page() {
           <Image src="/image/company2.jpg" alt="회사소개이미지" fill className="absolute object-cover object-top" />
           <div className="flex flex-col justify-center items-center mt-10 relative">
             <p className="text-3xl md:text-4xl font-bold text-white">회사소개</p>
-            <p className="text-xl md:text-2xl text-white/60 font-thin mt-2">company</p>
+            <p className="text-xl md:text-2xl text-white/70 font-light mt-2 tracking-[0.2em] uppercase">company</p>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default function page() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* 지도 */}
             <div className="lg:col-span-2">
-              <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative w-full h-[400px] md:h-[550px] rounded-2xl overflow-hidden shadow-xl">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.803595661817!2d129.0453001!3d35.1365745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ebbeac35f147%3A0x3a14e0b8eab5c66!2z67aA7IKw6rSR7Jet7IucIOuPmeq1rCDsiJjsoJXqs7Xsm5DroZwgMTUxLTI!5e0!3m2!1sko!2skr!4v1763698797817!5m2!1sko!2skr"
                   loading="lazy"
@@ -98,10 +98,21 @@ export default function page() {
               <div className="bg-white/20 border border-white/40 rounded-xl p-6 shadow-lg">
                 <h3 className="text-lg font-bold  mb-4 flex items-center gap-2">
                   {/* <span className="text-2xl">📍</span> */}
-                  주소
+                  본사 주소
                 </h3>
                 <p className=" leading-relaxed">
-                  부산광역시 동구 수정공원로 151-2 <br /> 대영 잠수 개발(주)
+                  부산광역시 동구 수정공원로 151-2 <br /> 대양 잠수 개발(주)
+                </p>
+              </div>
+              <div className="bg-white/20 border border-white/40 rounded-xl p-6 shadow-lg">
+                <h3 className="text-lg font-bold  mb-4 flex items-center gap-2">
+                  {/* <span className="text-2xl">📍</span> */}
+                  제주도 지점 주소
+                </h3>
+                <p className=" leading-relaxed">
+                  서귀포시 중정로 34,502호
+                  <br />
+                  (서귀동, 천지연리슈빌)
                 </p>
               </div>
 
@@ -113,6 +124,8 @@ export default function page() {
                 </h3>
                 <div className="space-y-2 ">
                   <p>전화: 010-4117-7991</p>
+
+                  <p>일반: 064-763-7992</p>
                   <p>팩스: 064-763-7993</p>
                 </div>
               </div>

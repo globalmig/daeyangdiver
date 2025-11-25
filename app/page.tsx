@@ -28,13 +28,13 @@ export default function HeroVideo() {
 
         {/* 텍스트 오버레이 */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-white text-center px-4">
-          <p className="text-3xl md:text-5xl font-bold drop-shadow-2xl">대영잠수개발</p>
+          <p className="text-3xl md:text-5xl font-bold drop-shadow-2xl">대양잠수개발</p>
 
           <p className="mt-3 drop-shadow-md md:text-xl my-10">경력의 전문 잠수팀이 안전하고 검증된 수중 솔루션을 제공합니다.</p>
 
           {/* 태그 영역 */}
           <div className="mt-5 flex flex-wrap justify-center w-full gap-2 md:gap-4">
-            {["수중공사", "수중촬영", "수중용접", "선박인양", "수중구조물설치"].map((tag) => (
+            {["수중공사", "수중촬영", "수중용접", "선박인양", "수중구조물설치", "선박수중작업", "소나 사운더 수중 복측"].map((tag) => (
               <div key={tag} className="border px-5 py-2 rounded-full text-sm backdrop-blur-sm bg-white/10">
                 #{tag}
               </div>
@@ -67,8 +67,8 @@ export default function HeroVideo() {
       <section className="py-32 w-full  text-start bg-cover bg-bottom text-white mx-auto" style={{ backgroundImage: "url('/image/bg_contact2.jpg')" }}>
         <div className="max-w-[1440px] mx-auto px-6 flex flex-col gap-4">
           <div className="mb-8">
-            <h2 className="text-5xl md:text-6xl font-bold mb-2 tracking-tight">견적문의</h2>
-            <div className="w-24 h-1.5 bg-white"></div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight">견적문의</h2>
+            <div className="w-24 h-1 md:h-1.5 bg-white"></div>
           </div>
 
           <p className="max-w-xl text-2xl leading-relaxed mb-8">
@@ -81,11 +81,17 @@ export default function HeroVideo() {
             <div className="flex items-center gap-4">
               <div>
                 <p className="text-sm text-white/80 mb-1">전화 문의</p>
-
-                <a href="tel:010-4117-7991" className="text-3xl font-bold tracking-wider flex gap-4 items-center hover:text-blue-200 transition-colors">
-                  <IoCall color="white" />
-                  010-4117-7991
+                <div></div>
+                <a href="tel:010-4117-7991" className="text-xl md:text-3xl font-bold tracking-wider flex gap-4 items-center hover:text-blue-200 transition-colors">
+                  <IoCall color="white" className="mr-2 md:mr-8 hidden" />
+                  Tel: <br /> 010-4117-7991
+                  <br />
+                  064-763-7992
                 </a>
+                <p className="text-xl md:text-3xl font-bold tracking-wider flex gap-4 items-center hover:text-blue-200 transition-colors mt-8">
+                  FAX:
+                  <br /> 064-763-7993
+                </p>
               </div>
             </div>
           </div>
@@ -108,7 +114,7 @@ export default function HeroVideo() {
         <h2>주요 업무</h2>
         <p>수중 용접 및 절단, 수중 촬영, 구조물 설치, 침몰 선박 인양, 하수처리장 보수·정비 등 전문 수중 공사 서비스를 제공합니다.</p>
 
-        <Link href="/business?tab=underwater-welding" className="card-List grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2 max-w-[1440px] py-10 mx-auto px-4">
+        <Link href="/business?tab=underwater-welding" className="card-List grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-[1440px] py-10 mx-auto px-4">
           <div className="card-item border bg-black/10 rounded-xl overflow-hidden relative h-96 md:h-[440px] group">
             <Image src="/image/수중용접.jpg" alt="수중용접" fill className="object-cover" />
             <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4 text-center">
@@ -143,6 +149,18 @@ export default function HeroVideo() {
               <h4 className="text-white">하수처리장 보수·정비</h4>
             </div>
           </div>
+          <div className="card-item border bg-black/10 rounded-xl overflow-hidden relative h-96 md:h-[440px] group">
+            <Image src="/image/선박수중작업.png" alt="선박수중작업을 하는 작업자" fill className="object-cover" />
+            <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4 text-center">
+              <h4 className="text-white">선박 수중 작업</h4>
+            </div>
+          </div>
+          <div className="card-item border bg-black/10 rounded-xl overflow-hidden relative h-96 md:h-[440px] group">
+            <Image src="/image/소나사운드.png" alt="소나 사운드 수중 복측" fill className="object-cover" />
+            <div className="absolute bottom-0 left-0 right-0 bg-black/70 p-4 text-center">
+              <h4 className="text-white">소나 사운드 수중 복측</h4>
+            </div>
+          </div>
         </Link>
       </section>
 
@@ -158,7 +176,7 @@ export default function HeroVideo() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* 지도 */}
             <div className="lg:col-span-2">
-              <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative w-full h-[400px] md:h-[550px] rounded-2xl overflow-hidden shadow-xl">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.803595661817!2d129.0453001!3d35.1365745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ebbeac35f147%3A0x3a14e0b8eab5c66!2z67aA7IKw6rSR7Jet7IucIOuPmeq1rCDsiJjsoJXqs7Xsm5DroZwgMTUxLTI!5e0!3m2!1sko!2skr!4v1763698797817!5m2!1sko!2skr"
                   loading="lazy"
@@ -175,10 +193,22 @@ export default function HeroVideo() {
               <div className="bg-white/20 border border-white/40 rounded-xl p-6 shadow-lg">
                 <h3 className="text-lg font-bold  mb-4 flex items-center gap-2">
                   {/* <span className="text-2xl">📍</span> */}
-                  주소
+                  본사 주소
                 </h3>
                 <p className=" leading-relaxed">
-                  부산광역시 동구 수정공원로 151-2 <br /> 대영 잠수 개발(주)
+                  부산광역시 동구 수정공원로 151-2 <br /> 대양 잠수 개발(주)
+                </p>
+              </div>
+
+              <div className="bg-white/20 border border-white/40 rounded-xl p-6 shadow-lg">
+                <h3 className="text-lg font-bold  mb-4 flex items-center gap-2">
+                  {/* <span className="text-2xl">📍</span> */}
+                  제주도 지점 주소
+                </h3>
+                <p className=" leading-relaxed">
+                  서귀포시 중정로 34,502호
+                  <br />
+                  (서귀동, 천지연리슈빌)
                 </p>
               </div>
 
@@ -190,6 +220,8 @@ export default function HeroVideo() {
                 </h3>
                 <div className="space-y-2 ">
                   <p>전화: 010-4117-7991</p>
+
+                  <p>일반: 064-763-7992</p>
                   <p>팩스: 064-763-7993</p>
                 </div>
               </div>

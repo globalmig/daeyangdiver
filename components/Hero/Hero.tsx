@@ -70,6 +70,28 @@ export default function Hero() {
             <p className="text-base sm:text-lg md:text-4xl mt-1 opacity-90 text-shadow">하수처리 시설의 안정적 운영을 위한 전문 보수·정비 서비스</p>
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/선박수중작업.png" alt="선박 수중작업" fill className="object-cover" />
+          {/* 오버레이 텍스트 영역 */}
+          <div className="absolute bottom-10  left-6  md:left-20 text-white text-left border-l-4 pl-4 md:pl-10">
+            {/* 제목 */}
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold drop-shadow-lg text-shadow">선박 수중작업</h2>
+
+            {/* 설명 */}
+            <p className="text-base sm:text-lg md:text-4xl mt-1 opacity-90 text-shadow">선박 하부 점검·보수·절단·인양 등 모든 수중 작업</p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/소나사운드.png" alt="소나사운더수중복측" fill className="object-cover" />
+          {/* 오버레이 텍스트 영역 */}
+          <div className="absolute bottom-10  left-6  md:left-20 text-white text-left border-l-4 pl-4 md:pl-10">
+            {/* 제목 */}
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold drop-shadow-lg text-shadow">소나 사운더 수중 복측</h2>
+
+            {/* 설명 */}
+            <p className="text-base sm:text-lg md:text-4xl mt-1 opacity-90 text-shadow">소나 사운더를 활용해 수중 지형·수심·장애물을 정밀하게 복측(측량)</p>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );

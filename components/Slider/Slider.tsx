@@ -59,28 +59,34 @@ export default function App() {
         className="mySwiper h-[800px]"
       >
         <SwiperSlide>
-          <Image src="/image/구조물설치.png" alt="구조물설치" fill className="object-cover" />
+          <Image src="/image/구조물설치.png" alt="구조물설치" fill className="object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/image/work1.jpg" alt="구조물설치" fill className="object-cover" />
+          <Image src="/image/work1.jpg" alt="구조물설치" fill className="object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/image/work2.jpg" alt="구조물설치" fill className="object-cover" />
+          <Image src="/image/work2.jpg" alt="구조물설치" fill className="object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/image/work3.jpg" alt="구조물설치" fill className="object-cover" />
+          <Image src="/image/work3.jpg" alt="구조물설치" fill className="object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/image/work4.jpg" alt="구조물설치" fill className="object-cover" />
+          <Image src="/image/work4.jpg" alt="구조물설치" fill className="object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/image/work5.jpg" alt="구조물설치" fill className="object-cover" />
+          <Image src="/image/work5.jpg" alt="구조물설치" fill className="object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/image/work6.jpg" alt="구조물설치" fill className="object-cover" />
+          <Image src="/image/work6.jpg" alt="구조물설치" fill className="object-cover rounded-lg" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/image/수중용접.jpg" alt="수중용접" fill className="object-cover" />
+          <Image src="/image/수중용접.jpg" alt="수중용접" fill className="object-cover rounded-lg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/선박수중작업.png" alt="선박수중작업" fill className="object-cover rounded-lg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src="/image/소나사운드.png" alt="소나사운드" fill className="object-cover rounded-lg" />
         </SwiperSlide>
       </Swiper>
     </>

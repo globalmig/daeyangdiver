@@ -26,8 +26,8 @@ const businessList = [
   },
   {
     id: "underwater-welding",
-    label: "수중용접",
-    title: "수중용접",
+    label: "수중용접·절단",
+    title: "수중용접·절단",
     image: "/image/수중용접.jpg",
     alt: "수중용접 이미지",
     description: "전문 잠수사와 특수 장비를 통해 수중에서의 용접 및 절단 작업을 안전하게 수행합니다. 해양 구조물, 선박, 항만 시설 등에 대해 정밀한 용접·절단 및 보수 작업이 가능합니다.",
@@ -47,6 +47,26 @@ const businessList = [
     alt: "선박 인양 이미지",
     description: "침몰된 선박, 장비, 구조물 등을 안전하고 효율적으로 인양하는 전문 작업을 제공합니다. 현장 여건을 상세 분석한 후 최적의 인양 계획을 수립해 안정적인 작업을 진행합니다.",
     works: ["침몰 선박 및 해양 장비 인양", "구조물 및 해저 투하물 회수 작업", "대형 구조물 인양 설계 및 시공", "부선·크레인 등 장비 활용 인양 작업"],
+  },
+  {
+    id: "ship-underwater-work",
+    label: "수중작업",
+    title: "선박 수중작업",
+    image: "/image/선박수중작업.png",
+    alt: "선박 수중작업 이미지",
+    description:
+      "선저·프로펠러·러더 등 선박 주요 부위를 수중에서 직접 점검·보수·복구하는 전문 작업입니다. 선박 운항 중단을 최소화하며, 잠수전문 인력과 장비를 활용해 안전하고 정확하게 작업을 수행합니다.",
+    works: ["선저(바닥) 점검 및 영상 촬영", "프로펠러 손상·이물 제거 작업", "러더(타) 점검 및 보수", "박스쿨러·해수흡입구 청소", "선박 하부 구조물 상태 점검 및 복구", "부착물 제거 및 긴급 수리 작업"],
+  },
+  {
+    id: "sonar-survey",
+    label: "수중측량",
+    title: "소나 사운더 수중 복측",
+    image: "/image/소나사운드.png",
+    alt: "소나 사운더 수중 복측 이미지",
+    description:
+      "소나(Sonar) 사운더 기술을 활용하여 수중 지형, 수심, 장애물 위치 등을 고해상도로 측정하는 전문 복측(腹測) 작업입니다. 해양·항만 공사, 구조물 설치, 준설 작업에 필요한 핵심 데이터를 정확하게 확보합니다.",
+    works: ["소나 사운더 기반 수중 지형 정밀 측량", "수심 변화 및 해저면 형태 분석", "수중 장애물 및 구조물 위치 탐지", "항만·준설·해양 시공 사전 조사", "수중 데이터 기반 시공 계획 수립"],
   },
 ];
 
@@ -95,14 +115,15 @@ function BusinessContent() {
       {/* 2. 아래 스크롤 영역 */}
       <section className="w-full bg-white rounded-t-2xl p-6 md:p-10 shadow-md z-10 flex flex-col items-center -mt-4">
         {/* 사업분야 탭 */}
-        <div className="sticky top-[80px] md:top-[70px] z-20 w-full max-w-[1440px] bg-white/90 backdrop-blur border-b border-gray-100">
+        {/* <div className="sticky top-[80px] md:top-[70px] z-20 w-full max-w-[1440px] bg-white/90 backdrop-blur border-b border-gray-100"> */}
+        <div className=" z-20 w-full max-w-[1440px] bg-white/90 backdrop-blur border-b border-gray-100">
           <ul className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 w-full py-3 md:py-4">
             {businessList.map((item) => (
               <li key={item.id}>
                 <button
                   type="button"
                   onClick={() => handleTabClick(item.id)}
-                  className={`px-4 py-2.5 md:py-3 text-sm md:text-base rounded-xl w-full transition
+                  className={`px-4 py-2.5 md:py-3 text-base md:text-lg font-semibold rounded-xl w-full transition
                   ${activeId === item.id ? "bg-[#079aca] text-white shadow-md" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
                 >
                   {item.label}

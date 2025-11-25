@@ -39,7 +39,7 @@ export default function Header() {
       <header className="z-50 w-full fixed top-0 py-5 px-4 bg-black/30 backdrop-blur-sm">
         <div className="flex justify-between items-center max-w-[1440px] w-full mx-auto">
           <Link href={"/"}>
-            <h1 className="m-0 text-white text-xl md:text-2xl font-bold cursor-pointer">대영잠수개발</h1>
+            <h1 className="m-0 text-white text-xl md:text-2xl font-bold cursor-pointer">대양잠수개발</h1>
           </Link>
 
           {/* 데스크톱 메뉴 */}
