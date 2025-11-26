@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "대양잠수개발(주)",
     images: [
       {
-        url: "https://www.daeyangdiver.com/image/SEO.png", // ✅ OG 이미지 경로 (실제 파일 경로로 변경)
+        url: "https://www.daeyangdiver.com/image/seo.png", // ✅ OG 이미지 경로 (실제 파일 경로로 변경)
         width: 1200,
         height: 630,
         alt: "대양잠수개발 수중공사 대표 이미지",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "대양잠수개발(주) | 수중공사·선박 인양·수중용접 전문",
-    description: "수중 용접·절단, 구조물 설치, 선박 인양 등 다양한 수중 공사를 전문적으로 수행하는 대양잠수개발(주)입니다.",
-    images: ["https://www.daeyangdiver.com/image/SEO.png"],
+    description: "수중 용접·절단, 구조물 설치, 선박 인양 등 다양한 수중 공사를 전문적으로 제공합니다.",
+    images: ["https://www.daeyangdiver.com/image/seo.png"],
   },
   alternates: {
     canonical: "https://www.daeyangdiver.com",
@@ -77,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "LocalBusiness",
               name: "대양잠수개발(주)",
               url: "https://www.daeyangdiver.com", // ✅ 실제 도메인
-              description: "수중 용접 및 절단, 수중촬영, 구조물 설치, 침몰 선박 인양, 하수처리장 보수·정비 등 전문 수중 공사 서비스를 제공하는 대양잠수개발(주)입니다.",
+              description: "수중 용접·절단, 구조물 설치, 선박 인양 등 다양한 수중 공사를 전문적으로 제공합니다.",
               telephone: "010-4117-7991",
               faxNumber: "064-763-7993",
               address: {
