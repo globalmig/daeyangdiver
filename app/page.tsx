@@ -29,8 +29,8 @@ export default function HeroVideo() {
         {/* 텍스트 오버레이 */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-white text-center px-4">
           <p className="text-3xl md:text-5xl font-bold drop-shadow-2xl">대양잠수개발(주)</p>
-
-          <p className="mt-3 drop-shadow-md md:text-xl my-10">경력의 전문 잠수팀이 안전하고 검증된 수중 솔루션을 제공합니다.</p>
+          <p className="mt-4"> 제주도 지점 운영 중: 서귀포시 중정로 34, 502호</p>
+          <p className="mt-10 drop-shadow-md md:text-xl my-10">경력의 전문 잠수팀이 안전하고 검증된 수중 솔루션을 제공합니다.</p>
 
           {/* 태그 영역 */}
           <div className="mt-5 flex flex-wrap justify-center w-full gap-2 md:gap-4">
