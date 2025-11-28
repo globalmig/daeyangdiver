@@ -19,21 +19,22 @@ export default function HeroVideo() {
 
   return (
     <>
-      <section className="relative w-full h-[500px] lg:h-screen overflow-hidden">
+      <section className="relative w-full h-[700px] lg:h-screen overflow-hidden">
         {/* 비디오 */}
-        <video ref={videoRef} src="/video/hero.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover rounded-b-[150px] md:rounded-b-[400px]" />
+        <video ref={videoRef} src="/video/hero.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover rounded-b-[100px] md:rounded-b-[200px]" />
 
         {/* 어두운 오버레이 (영상 위 전체 덮음) */}
         <div className="absolute inset-0 bg-black/50 rounded-b-[150px] md:rounded-b-[400px]" />
 
         {/* 텍스트 오버레이 */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-white text-center px-4">
-          <p className="text-3xl md:text-5xl font-bold drop-shadow-2xl">대양잠수개발(주)</p>
-          <p className="mt-4"> 제주도 지점 운영 중: 서귀포시 중정로 34, 502호</p>
-          <p className="mt-10 drop-shadow-md md:text-xl my-10">경력의 전문 잠수팀이 안전하고 검증된 수중 솔루션을 제공합니다.</p>
+          <p className="text-4xl md:text-5xl font-bold drop-shadow-2xl">대양잠수개발(주)</p>
+          <p className="mt-4"> 제주시 서귀포 지사 센터</p>
+          <p className=""> 고압콤프레사 · AC. DC.발전기임대</p>
+          <p className="mt-5 drop-shadow-md md:text-xl my-10">경력의 전문 잠수팀이 안전하고 검증된 수중 솔루션을 제공합니다.</p>
 
           {/* 태그 영역 */}
-          <div className="mt-5 flex flex-wrap justify-center w-full gap-2 md:gap-4">
+          <div className="mt-2 flex flex-wrap justify-center w-full gap-2 md:gap-4">
             {["수중공사", "수중촬영", "수중용접·절단", "선박인양", "수중구조물설치", "선박수중작업", "소나사우더수중곡직(특허)"].map((tag) => (
               <div key={tag} className="border px-5 py-2 rounded-full text-sm backdrop-blur-sm bg-white/10">
                 #{tag}
