@@ -24,7 +24,7 @@ export default function HeroVideo() {
         <video ref={videoRef} src="/video/hero.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover rounded-b-[100px] md:rounded-b-[200px]" />
 
         {/* 어두운 오버레이 (영상 위 전체 덮음) */}
-        <div className="absolute inset-0 bg-black/50 rounded-b-[150px] md:rounded-b-[400px]" />
+        <div className="absolute inset-0 bg-black/50 rounded-b-[100px] md:rounded-b-[200px]" />
 
         {/* 텍스트 오버레이 */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-white text-center px-4">
@@ -35,7 +35,7 @@ export default function HeroVideo() {
 
           {/* 태그 영역 */}
           <div className="mt-2 flex flex-wrap justify-center w-full gap-2 md:gap-4">
-            {["수중공사", "수중촬영", "수중용접·절단", "선박인양", "수중구조물설치", "선박수중작업", "소나사우더수중곡직(특허)"].map((tag) => (
+            {["수중공사", "수중촬영", "수중용접·절단", "선박인양", "수중구조물설치", "선박수중작업", "소나사우더수중곡직(특허)", "선박해체  말소 고철비철 폐기물처리"].map((tag) => (
               <div key={tag} className="border px-5 py-2 rounded-full text-sm backdrop-blur-sm bg-white/10">
                 #{tag}
               </div>
