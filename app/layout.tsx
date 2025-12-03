@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.daeyangdiver.com/image/seo.png", // ✅ OG 이미지 경로 (실제 파일 경로로 변경)
-        width: 1200,
-        height: 630,
+        width: 1600,
+        height: 900,
         alt: "대양잠수개발 수중공사 대표 이미지",
       },
     ],
