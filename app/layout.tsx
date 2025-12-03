@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.daeyangdiver.com"), // ✅ 실제 도메인으로 교체
   title: {
-    default: "대양잠수개발(주) | 수중공사·선박 인양·수중용접 전문",
+    default: "대양잠수개발(주) | 수중공사·선박 인양·수중용접·수중잠수 전문",
     template: "%s | 대양잠수개발(주)",
   },
   description: "수중 용접·절단, 구조물 설치, 선박 인양 등 다양한 수중 공사를 전문적으로 제공합니다.",
